@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .alert.alert-block.alert-success
+    h3 Success
+    p.lead Awesome, we just registered you as #{user}
+    p.lead Here's your Google Auth Code:
+    img(src="https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=otpauth://totp/#{user}@twofactortest?secret=#{code}")

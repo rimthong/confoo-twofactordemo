@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .hero-unit
+    h1= title
+    p.lead Welcome to #{title}
+    p
+      a.btn.btn-primary.btn-large(href="/register") Register
+      |  Or log in below!
+  form(action="/verify", method="POST")
+    fieldset
+      legend Log In
+      label Username
+      input(name="user", type="text")
+      label Password
+      input(name="password", type="password")
+      label Key
+      input(name="key", type="text")
+      span.help-block Enter your Yubikey code or Google Auth code.
+      button.btn(type="submit") Submit

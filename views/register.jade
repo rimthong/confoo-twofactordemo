@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  form(action="/do_register", method="POST")
+    fieldset
+      legend Registration Form
+      label Username
+      input(name="user", type="text")
+      label Password
+      input(name="password", type="password")
+      label Yubikey Code
+      input(name="yubicode", type="text")
+      span.help-block  If you have a Yubikey, enter a code to extract identity.
+      button.btn(type="submit") Submit

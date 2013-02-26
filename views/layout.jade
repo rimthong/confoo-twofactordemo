@@ -1,0 +1,15 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='javascript', href='/javascripts/bootstrap.min.js')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .navbar
+      .navbar-inner
+        a.brand(href="/") Confoo 2Factor Demo
+        ul.nav
+          li 
+            a(href="/register") Register
+    block content
