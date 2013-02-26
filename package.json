@@ -9,7 +9,7 @@
     "express": "3.1.0",
     "jade": "*",
     "stylus": "*",
-    "coffee-script": "~1.4.0",
+    "coffee-script": "~1.5.0",
     "underscore": "~1.4.4",
     "cryptojs": "~2.5.3"
   }
