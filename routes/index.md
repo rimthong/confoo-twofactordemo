@@ -8,7 +8,6 @@ In order to communicate with Yubico's authentication server, you'll need to use 
     
 ```coffeescript
     https = require('https')
-    base32 = require('base32')
     Crypto = (require 'cryptojs').Crypto
     _ = require 'underscore'
 

@@ -7,7 +7,6 @@ Dependencies
 In order to communicate with Yubico's authentication server, you'll need to use the **http or https** module. Other than that, we'll be abstracting the HMAC SHA-1 hashing and use some conversion methods of **CryptoJS** to make things clearer. Lastly, we'll use **underscore** to make it easier to search in our in-memory user store, you normally wouldn't really need that.
 
     https = require('https')
-    base32 = require('base32')
     Crypto = (require 'cryptojs').Crypto
     _ = require 'underscore'
 
